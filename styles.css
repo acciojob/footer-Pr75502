@@ -7,14 +7,66 @@
 }
 .media-icons{
 	display:flex;
-	flex-direction: row-reverse;
-	
+	justify-content:flex-end;
 	align-items:center;
-	padding:50px;
+	padding:px;
 	
 }
 img{
 	padding:10px;
-	width:50px;
+	width:40px;
 	border-radius:50%;
+}
+.top{
+	display:flex;
+	justify-content:space-between;
+}
+.content{
+	
+	background-color:black;
+	color:white
+}
+a {
+    color: white; 
+    text-decoration: none; /* Underline hatane ke liye */
+}
+a:hover{
+	color:green;
+}
+
+.logo_name{
+
+	font-size:45px;
+}
+
+/* Responsive for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .link-boxes {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .media-icons {
+        justify-content: center;
+        padding: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .link-boxes section {
+        width: 100%; /* Full width for small screens */
+        margin-bottom: 10px;
+    }
+}
+.bottom-details{
+	background-color:#008080;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	
+	
 }
